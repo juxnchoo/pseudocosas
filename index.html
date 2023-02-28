@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pseudoelementos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Juanchito re pete </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/MarvelBoy555">GitHub</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/watch?v=OBA1EJWhpxA">tecnologia</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+   
+        <nav class="col-xs-12 col-md-12 col-lg-12 title">
+          <h1>PSEUDOCLASES Y PSEUDOELEMENTOS</h1>
+        </nav>
+        <div class="row">
+          <article class="col-xs-12 col-md-12 col-lg-6 pseudo">
+            <h1 class="ques">¿Que es una Pseudoclase?</h1>
+            <p class="defi">Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector.</p>
+          </article>
+          <article class="col-xs-12 col-md-12 col-lg-6 pseudo">
+            <h1 class="ques">¿Ques es un Pseudoelemento?</h1>
+            <p class="defi">Al igual que las pseudo-classes , los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.</p>
+          </article>
+        </div>
+        <div class="row">
+          <article class="col-xs-12 col-md-12-col-lg-12 inici">
+            <h1 class="tt1">PSEUDOCLASES</h1>
+          </article>
+        </div>
+        <div class="row">
+          <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+            <h1 class="tcaja">::active</h1>
+            <p>representa un elemento (como un botón) que el usuario está activando. Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón primario del mouse y termina cuando se suelta. La pseudo-clase :active se usa comúnmente en los elementos a y button, pero también se puede usar en otros elementos.</p>
+            <a class="click" href="https://2.bp.blogspot.com/-CXQ5w7pj3xM/T90c274QpkI/AAAAAAAADgg/TOgILNOfSxI/s1600/escultura-resurreccion.gif">Haz click</a>
+          </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::checked</h1>
+          <p>representa cualquier radio (input type="radio" (en-US)), checkbox ("input type="checkbox") u option ("option" en un elemento "select") que está marcado o conmutado a un estado on. Entendio?!</p>
+            <div>
+              <input type="radio" name="my-input" class="yes">
+              <label for="yes">si claro q skibiridop yes yes </label>
+            
+              <input type="radio" name="my-input" class="yes">
+              <label for="no">No mi fai me duele la cumbre de las americas</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" name="my-checkbox" id="opt-in">
+              <label for="opt-in">Entendí!</label>
+            </div>
+            
+            <select name="my-select" id="fruit">
+              <option value="opt1">entendi</option>
+              <option value="opt2">Más o menos</option>
+              <option value="opt3">depronto entiendo</option>
+            </select>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::default</h1>
+          <p>representa cualquier elemento de formulario que sea el predeterminado entre un grupo de elementos relacionados. Entendió?
+          </p>
+          <input type="radio" name="season" id="jejesi" checked>
+          <label for="circulo">Sisa mi papa</label>
+          <input type="radio" name="season" id="jejemaso">
+          <label for="circulo">Más o menos suave </label>
+
+          <input type="radio" name="season" id="jejeno">
+          <label for="circulo">No</label>
+
+          <input type="radio" name="season" id="jejenose">
+          <label for="circulo">haganme el amor</label>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::disabled</h1>
+          <p>representa a cualquier elemento deshabilitado. Un elemento se encuentra deshabilitado si no puede ser activado (por ejemplo ser selecionado, hacer click en él o aceptar texto de entrada) ni aceptar el foco. El elemento tiene además un estado habilitado en el cual puede ser activado o recibir foco.</p>
+          
+          <legend>Ejemplo:</legend>
+          <label for="billing_is_shipping">Datos personales</label>
+          <input type="checkbox" id="caja_check" checked>
+          <br>
+          <input type="text" placeholder="HINCHA" disabled>
+          <input type="text" placeholder="EQUIPO" disabled>
+          <input type="text" placeholder="CIUDAD" disabled>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::empty</h1>
+          <p>representa cualquier elemento que no tenga hijos. Los hijos pueden ser nodos de elemento o texto (incluido el espacio en blanco). Los comentarios o las instrucciones de procesamiento no afectan si un elemento se considera vacío.</p>
+          <div class="cajacara">
+            <div class="box">gray</div>
+            <div class="box"></div>
+            <div class="box">  </div>
+          </div>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::enabled</h1>
+          <p>representa cualquier elemento habilitado. Un elemento está habilitado si puede ser activado (es decir seleccionado, se puede hacer click en él, acepta que se le introduzca texto, etc.) o si accepta el foco.</p>
+          <div class="cajacara">
+            <input type="button" value="QUE CUMPLAS MUCHOS MASSSSS" class="buttoncara">
+          </div>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::first</h1>
+          <p>La pseudo-clase :first de CSS, utilizada con la regla-at @page, representa la primera página de un documento impreso.</p>
+          <p class="primer">Primer página</p>
+          <p class="primer">Segunda página</p>
+          <button class="impri">Imprimir</button>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::first-child</h1>
+          <p>representa el primer elemento entre un grupo de elementos hermanos.</p>
+          <div class="phijo">
+            <button>Estoy seleccionado</button>
+            <button>no estas seleccionada</button>
+          </div>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::first-of-type</h1>
+          <p>epresenta el primer elemento de su tipo entre un grupo de elementos hermanos.</p>
+          <div class="tipe">
+            <h5> quiza es la mejor/h5>
+            <p> quiza no lo es </p>
+            <p> definitivamente amo a dios </p>
+          </div>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::focus</h1>
+          <p>representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario hace clic.</p>
+          <input class="azulix" value="amor por millonarios">
+          <input class="verdix" value="amor por nacional">
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::hover</h1>
+          <p>La pseudo-clase :hover de CSS coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).</p>
+          <a href="https://img.freepik.com/vector-gratis/fondo-estilo-comic-rojo-diseno-plano_23-2148797742.jpg" class="PINCHALE">PINCHALE</a>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::indeterminate</h1>
+          <p>epresenta cualquier elemento de formulario cuyo estado sea indeterminado.</p>
+          <div>
+            <input type="checkbox" id="indete">
+            <label for="checkbox">AMARILLO?</label>
+            <p>LO PLATANO FUIFUI FIUF MFUII</p>
+          </div>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::in-range</h1>
+          <p>Representa un elemento "input" cuyo valor actual se encuentra dentro de los límites de rango especificados por los atributos min y max.</p> 
+
+           
+              Los valores entre 1 y 10 son correctos
+              <li>
+                <input id="valo1" name="valo1" type="number" placeholder="1 a 10" min="1" max="10" value="92">
+              </li>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::invalid</h1>
+          <p>representa cualquier elemento "input" u otro elemento "form" cuyos contenidos no se puedan validar (en-US).</p>
+          <form class="inva">
+            <label for="url_input">Ingrese URL:</label>
+            <input type="url" id="url-input" />
+          </form>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::lang()</h1>
+          <p>La pseudo-clase :lang() de CSS es utilizada para modificar elementos en función del idioma en el que se determina que están.</p>
+        </aside>  
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::last-child</h1>
+          <p>La pseudo-clase :last-child de CSS representa el último elemento entre un grupo de elementos hermanos.</p>
+          <div class="ultimo">
+            <p>No me seleccionaron </p>
+            <p>no me seleccionaron</p>
+            <p>si me seleccionronVAMOS LOS MILLOS </p>
+        </div>
+
+        </aside>
+        
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::last-of-type</h1>
+          <p>La pseudo-class :last-of-type de CSS representa el último elemento de su tipo entre un grupo de elementos hermanos.</p>
+          <form class="ltipe">
+            <h5>no sé que poner</h5>
+           <p>Parrafo 1</p>
+           <p>parrafo 2</p>
+          </form>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::link</h1>
+          <p>La pseudo-clase :link CSS representa un elemento que aún no se ha visitado. Coincide con cada elemento no visitado "a", "area", o "link" que tiene un atributo href.</p>
+          <div class="enlavis">
+            <a href="https://steamuserimages-a.akamaihd.net/ugc/1814393398431620837/27D673E687EB286F8496464C28CF3A1C654E65B6/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">Enlace aun no visto. Click here.</a>
+            <br>
+            <a href="https://preview.redd.it/agut4qijinq41.png?auto=webp&s=aac2ed0eb810c4df472e4cbdd1a1b276a30fd5b3">Enlace ya visto. Click here.</a>
+          </div>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::link</h1>
+          <p>representa elementos que no coinciden con una lista de selectores. Como evita que se seleccionen elementos específicos, se lo conoce como la pseudoclase de negación.</p>
+          <div class="notk">
+            <p>parrafo 1</p>
+            <p class="fancy">parrafo 2</p>
+            <div>mama del @</div>
+          </div>
+        </aside>
+
+       <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::nth-child</h1>
+          <p>La pseudo-clase :nth-child() de CSS coincide con uno o más elementos en función de su posición entre un grupo de hermanos.</p>
+          <p></p>
+          <div class="first">
+            <span>Span 1!</span>
+            <span>Span 2</span>
+            <span>Span 3!</span>
+            <span>Span 4</span>
+            <span>Span 5!</span>
+            <span>Span 6!</span>
+            <span>Span 7!</span>
+            <span>Span 8!</span>
+          </div>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::nth-last-child</h1>
+          <p>La pseudo-clase :nth-last-child() de CSS selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+          <table class="tabla">
+            <tbody>
+              <tr>
+                <td>Primera 1</td>
+              </tr>
+              <tr>
+                <td>Segunda 2</td>
+              </tr>
+              <tr>
+                <td>Tercera 3</td>
+              </tr>
+              <tr>
+                <td>Cuarta 4</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="t2caja">::nth-last-of-type</h1>
+          <p>La pseudo-clase :nth-last-of-type() CSS coincide con uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+          <div class="ltp">
+            <span>Soy span.</span>
+
+            <span>soy span 2.</span>
+
+            <em>yo soy la mama de @</em>
+
+            <span>pasen rule 34</span>
+
+            <strike>mira como lo mueve</strike>
+
+            <span>ya no ma span</span>
+          </div>
+
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::only-child</h1>
+          <p>representa un elemento sin hermanos. Esto es lo mismo que :first-child:last-child o :nth-child(1):nth-last-child(1), pero con una especificidad menor.</p>
+          <main class="mani">
+            <div>
+              <i>RESPETO POR LA NACION </i>
+            </div>
+            <div>
+              <i>TE GUSTARIA JUGAR UN JUEGO </i><br>
+              <b>JORDANIA ESTA SUBESTIMADO</b><br>
+              <span>PLANB  <span> love and sex </span>
+            </div>
+          </main>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::only-of-type</h1>
+          <p>La pseudo-clase :only-of-type CSS representa un elemento que no tiene hermanos del mismo tipo.</p>
+          <main class="mano">
+            <div>mamaTOMA</div>
+            <p>mamaJoVANNY</p>
+            <div>mardisiTAMOAN</div>
+            <em>viva MADURO</em>
+          </main>
+
+        </aside>  
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::optional</h1>  
+          <p>La pseudo-clase :optional de CSS representa cualquier elemento "input", "select", o "textarea" que no tenga el atributo required establecido en él.</p>
+          <label>Edad</label>
+          <input type="text" class="opti">
+        </aside>   
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::out-of-range</h1>
+          <p>La pseudo-clase :out-of-range de CSS representa un elemento "input" cuyo valor actual está fuera de los límites de rango especificados por los atributos min y max.</p> 
+            <form action="" id="forma1">
+              <ul>Los valores entre 1 y 100 son validos.
+                <li class="este">
+                  <input class="valor1" name="valor1" type="number" placeholder="1 a 100" min="1" max="100" value="101">
+                  <label for="valor1">El valor esta SUBESTIMADO</label>
+                </li>
+              </ul>
+            </form>
+        </aside> 
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::read-only</h1>
+          <p>La pseudo-clase (en-US) :read-only de CSS representa un elemento que ya no es editable por el usuario (como un input).</p>
+
+          <input type="text" value="Soy editable" class="orea1">
+          <input type="text" value="Solo lectura" readonly class="orea">
+
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::read-write</h1>
+          <p>La pseudo-clase (en-US) :read-write de CSS representa un elemento (como un input) que es editable por el usuario.</p>
+          <input type="text" value="Soy editable" class="edi">
+          <input type="text" value="Solo lectura" readonly class="edi">
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::requiered</h1>
+          <p>La pseudo-clase :required de CSS representa cualquier elemento "input", "select", o "textarea" que tenga el atributo required establecido en él.</p>
+          
+          <input type="text" class="req" required value="Yo si tengo papa" readonly>
+          <input type="text" class="req" value="Yo no tengo papa" readonly>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::right</h1>
+          <p>La pseudo-clase CSS :right, utilizada con la regla-at @page, representa todas las páginas de la derecha de un documento impreso.</p>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::root</h1>
+          <p>La pseudo-clase :root de CSS selecciona el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento "html" y es idéntico al selector html, excepto que su especificidad es mayor.</p>
+          <p>puede ser útil para declarar variables CSS globales.</p>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::scope</h1>
+          <p>La pseudoclase :scope CSS representa elementos que son un punto de referencia para que los selectores coincidan.</p>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::target</h1>
+          <p>La pseudo-clase :target de CSS representa un elemento único (el elemento objetivo) con un id que coincide con el fragmento de la URL.</p>
+
+          <h3>Contenido</h3>
+          <ol>
+            <li><a href="#p1">Primer párrafo</a></li>
+            <li><a href="#p2">Segundo Párrado</a></li>
+            <li><a href="">No tengo objetivo</a></li>
+          </ol>
+          <h3>Párrafos</h3>
+          <p id="#p1">Soy el primer párrafo</p>
+          <p id="#p2">Soy el segundo párrado</p>
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::valid</h1>
+          <p>La pseudo-clase :valid de CSS representa cualquier elemento "input" u otro elemento "form" cuyo contenido se valide (en-US) satisfactoriamente. Esto permite que los campos válidos adopten fácilmente una apariencia que ayuda al usuario a confirmar que sus datos están formateados correctamente.</p>
+          <input type="email" class="olas" value="Email">
+        </aside>
+        <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+          <h1 class="tcaja">::visited</h1>
+          <p> La pseudo-clase :visited de CSS representa enlaces que el usuario ya ha visitado.</p>
+          <div class="visi">
+            <a href="#test_link_visitado">DA CLCK ACA MANO</a>
+            <br>
+            <a href="">Q BUENA MANO DISTE CLICK </a>
+          </div>
+        </aside>
+    </div>
+    <div class="row">
+      <article class="col-xs-12 col-md-12-col-lg-12 inici">
+        <h1 class="tt1">PSEUDOELEMENTOS</h1>
+      </article>
+    </div>
+    <div class="row">
+      <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+        <h1 class="tcaja">::after</h1>
+        <p>En CSS, ::after crea un pseudo-elemento que es el último hijo del elemento seleccionado. Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content.Es en linea (inline) de forma predeterminada.</p>
+        <p class="raku">viva MADURO EXTADITADO</p>
+        <p>Me encanta esta vaina</p>
+        <p class="kata"> Q BUENA MANO DA CLICK</p>
+
+
+      </aside>
+      <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+        <h1 class="tcaja">::after</h1>
+        <p>En CSS, ::before crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.</p>
+        <p class="spre">te odio maduro baate con alcanfor</p>
+        <p class="spre">viva el cucuta deportivo </p>
+
+      </aside>
+    </aside>
+    <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+      <h1 class="tcaja">::first-letter</h1>
+      <p>El pseudo-elemento ::first-letter aplica estilos a la primera letra de la primera línea un elemento de bloque, sólo cuando no es precedido de otro contenido</p>
+      <p class="pletra"> dead memories in my herart ziploc yo soy lo mas fresa</p>
+    </aside>
+    <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+      <h1 class="tcaja">::first-line</h1>
+      <p>El Pseudoelemento ::first-line aplica estilos a la primera línea de un elemento de bloque.</p>
+      <p class="fline">scared to vbe lonley big time</p>
+    </aside>
+    <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+      <h1 class="tcaja">::first-line</h1>
+      <p>El selector ::selection CSS pseudo-elemento aplica reglas a una porción de un documento que ha sido destacado (por ejemplo: selección con el mouse o algún otro puntero en un dispositivo) del usuario.</p>
+      <p class="selec"> dead memories in my herart ziploc yo soy lo mas fresa 
+
+      </p>
+
+    </aside>
+    <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+      <h1 class="tcaja">::backdrop</h1>
+      <p>Cada uno de los elementos en la pila de la capa superior posee un ::backdrop pseudo-element. Este pseudo-elemento es una caja que se muestra inmediatamente debajo del elemento (y sobre el elemento inmediatamente inferior de la pila, si es que hay), dentro de dicha capa superior.</p>
+    </aside>
+    <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+      <h1 class="tcaja">::placeholder</h1>
+      <p>El pseudo-elemento CSS ::placeholder representa el texto provisional en un elemento "input" o un elemento "textarea".</p>
+      <input placeholder="Buenas las tenga">
+    </aside>
+    <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+      <h1 class="tcaja">::marker</h1>
+      <p>selecciona la caja de marcadores de un elemento de la lista, que normalmente contiene una viñeta o un número. Funciona en cualquier elemento o pseudo-elemento configurado para display: list-item, como el elemento "li" y "summary"</p>
+      <ul>
+        <li>ferrari</li>
+        <li>ducatti</li>
+        <li>su papa es moratlover 
+        </li>
+      </ul>
+
+    </aside>
+    <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+      <h1 class="tcaja">::spelling-error</h1>
+      <p>El pseudo-elemento CSS ::spelling-error representa un segmento de texto que el user agentha marcado como deletreado incorrectamente.</p>
+      <p class="spell">olo</p>
+      <p>gatubela by dario dario </p>
+    </aside>
+  </aside>
+  <aside class="col-xs-12 col-md-6 col-lg-3 caja">
+    <h1 class="t2caja">::grammar-error</h1>
+    <p>El pseudoelemento CSS ::grammar-error representa un segmento de texto que el agente de usuario ha marcado como gramaticalmente incorrecto.</p>
+    <p>solo qiuero tocar tu ser con agua de lulo </p>
+
+      <p>matenme</p>
+
+    </div>
+    <script>
+      document.querySelector(".impri").onclick = function () {
+  window.print();
+}
+      var inputs = document.getElementsByTagName("input");
+
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].indeterminate = true;
+      }
+    </script>
+   
+
+  </body>
+</html>

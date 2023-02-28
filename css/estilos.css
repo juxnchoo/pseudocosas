@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    color: rgb(8, 39, 39);
+    font-size:large;
+}
+
+.buscar{
+  background-color: rgb(174, 0, 255);
+  height: 10vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.title{
+  height: 50vh;
+  background-image: url(../images/images.jfif);
+  background-size: cover;
+ color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-position: center;
+  background-size: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.pseudo{
+  padding: 12vh;
+}
+.ques{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh; 
+}
+.defi{
+  text-align: justify;
+}
+.inici{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: burlywood;
+}
+.caja{
+  text-align: justify;
+  padding: 5vh;
+
+}
+
+.tcaja{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  background-color: green;
+
+}
+
+.click{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+  
+.select {
+    margin: 8px;
+}           
+
+  
+.yes:checked + label {
+    color: rgb(0, 0, 0);
+}
+
+  
+
+.yes[type="radio"]:checked {
+    box-shadow: 0 0 0 3px #9e9718 ;
+}
+
+  
+
+  input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px #239e18;
+}
+
+  
+
+  option:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+}
+
+.circulo:default {
+      box-shadow: 0 0 2px 1px coral;
+    }
+#jejesi:default {
+    box-shadow: 0 0 2px 1px coral;
+}
+
+.circulo:default + label{
+      color: coral;
+      display: flex;
+      align-items: center;
+}  
+
+@page:first{
+      margin-left:50% ;
+      margin-top: 50%;
+}
+.primer{
+      page-break-after: always;
+}
+        button:first-child{
+        color: #189e3a;
+        background-color: rgb(255, 4, 4);
+}
+.tipe p:first-of-type{
+    color: #189e40;
+    font-size: 1.5rem;
+}
+#fullscreen:fullscreen{
+    font-size: 1.5rem;
+
+}
+#fullscreen:fullscreen > p{
+    color: #40c540;
+}
+.azulix:focus{
+    background-color: #788dc9;
+    color: #00fff2;
+}
+.verdix:focus{
+    background-color: rgb(151, 219, 151);
+    color: rgb(59, 172, 59);
+}
+.clickhere{
+    background-color: rgba(199, 6, 6, 0.26);
+    transition: background-color .5s;
+    font-size: 3.333rem;
+
+}
+.clickhere:hover{
+    background-color: red;
+}
+input:indeterminate label{
+    background-color: lime;
+}
+li{
+    list-style: none;
+    margin-bottom: 1em;
+}
+#valo1{
+    border: 1px solid black;
+}
+#valo1:in-range{
+    background-color: rgba(0, 255, 0, 0.25);
+
+}
+#valo1:out-of-range{
+    background-color: rgba(255, 0, 0, 0.25);
+    border: 2px solid red;
+}
+#url-input:invalid{
+    background-color: #ff0000;
+}
+#url-input:valid{
+    background-color: #002fff;
+
+}
+.inva{
+    border: 5px  solid rgb(20, 189, 251);
+    display: flex;
+    align-items: center;
+}
+.ultimo p:last-child{
+    background-color: #5aca57;
+    color: rgb(100, 24, 24);
+}
+.ltipe p:last-of-type{
+    color: #2540c4;
+}
+.ltipe{
+    border: 3px solid rgb(224, 10, 10);
+}
+.enlavis a:link{
+    background-color: rgb(226, 135, 135);
+    color: rgb(139, 36, 36);
+}
+.fancy{
+    text-shadow: 2px 2px 3px #d02ed6;
+}
+.notk p:not(.fancy){
+    color: green;
+}
+.notk div:not(p){
+    text-decoration: underline;
+}
+.notk{
+    border: 3px solid rgb(148, 181, 252);
+}
+.first span:nth-child(2n+1){
+  background-color: #2626db;
+}
+.first span, .first div em{
+  padding: 5px;
+  border: 1px solid rgb(112, 255, 68);
+  display: inline-block;
+  margin-bottom: 3px;
+}
+.tabla{
+  border: 3px solid rgb(214, 214, 214);
+}
+tr:nth-last-child(-n+3){
+  background-color: rgb(214, 214, 214);
+}
+tr:nth-last-child(4){
+  color: #41ff60;
+}
+.ltp span:nth-last-of-type(2){
+  background-color: #7bff5a;
+  color: white;
+}
+.t2caja{
+  font-size: 2.1rem;
+  background-color: rgb(214, 214, 214);
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+}
+.mani :only-child{
+  background-color: #5cff85;
+  color: white;
+}
+.mano :only-of-type{
+  background-color: #4aff44;
+  color: white;
+}
+.opti :optional{
+  border: 2px solid rgba(92, 255, 92, 0.623) ;
+}
+.este{
+  list-style: none;
+  margin-bottom: 1em;
+}
+.valor1{
+border: 1px solid black;
+}
+input:out-of-range{
+  background-color: rgba(255, 0, 0, 0.25);
+}
+input:in-range{
+  background-color: rgba(0, 255, 0, 0.25);
+}
+input:in-range+label::after{
+  content: ' melo.';
+}
+input:out-of-range+label::after{
+  content: ' paila.';
+}
+input.orea:read-only{
+  background-color: #5fff3f;
+  color: white;
+}
+input.edi:read-write{
+  background-color: #44ff63;
+  color:white;
+}
+input.req:required{
+  background-color: #65ff46;
+  color: white;
+}
+p:target{
+  background-color: #51ff77;
+}
+p:target::before{
+  content: "►";
+  color: rebeccapurple;
+  margin-right: .25em;
+}
+input.olas:invalid{
+  background-color: rgba(255, 0, 0, 0.767);
+}
+input.olas:valid{
+  background-color: #41ff28;
+}
+.visi a{
+  background-color: #32ff817d;
+}
+.visi a:visited{
+  background-color: rgba(55, 255, 55, 0.446);
+}
+.raku::after{
+  content: " <- puñeta !";
+  color: #000000;
+}
+.kata::after{
+  content:" <- puñeta !";
+}
+.spre::before{
+  content: "«";
+  color: red;
+}
+.spre::after{
+  content: "»";
+  color: rgb(69, 255, 53);
+}
+.pletra::first-letter{
+  font-size: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fline::first-line{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #36ff50;
+}
+.fline::first-letter{
+  font-size: 3rem;
+}
+.selec::selection{
+  background-color: #5dff35   ;
+}
+input::placeholder{
+  color: white;
+  background-color: #3cff36;
+}
+ul li::marker{
+  color: #31ff5d;
+  font-size: 1.5rem;
+  background-color: red;
+}
+.spell::spelling-error{
+  background-color: red;
+}
